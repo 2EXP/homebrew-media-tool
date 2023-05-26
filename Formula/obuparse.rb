@@ -1,5 +1,5 @@
 class Obuparse < Formula
-  desc "simple and portable single file AV1 OBU parser"
+  desc "Simple and portable single file AV1 OBU parser"
   homepage "https://github.com/dwbuiten/obuparse"
   url "https://github.com/dwbuiten/obuparse/archive/refs/heads/master.tar.gz"
   version "master"
