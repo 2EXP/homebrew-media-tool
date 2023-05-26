@@ -7,8 +7,7 @@ class Obuparse < Formula
   license "ISC"
 
   def install
-    system "make"
-    system "make", "install", "PREFIX=#{HOMEBREW_PREFIX}"
+    system "make", "PREFIX=#{HOMEBREW_PREFIX}"
   end
 
   test do
