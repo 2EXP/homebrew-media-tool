@@ -7,7 +7,7 @@ class Obuparse < Formula
   license "ISC"
 
   def install
-    in    inreplace "Makefile", "libobuparse.so", "libobuparse"
+    inreplace "Makefile", "libobuparse.so", "libobuparse"
     system "make"
     include.install "obuparse.h"
     if OS.mac?
