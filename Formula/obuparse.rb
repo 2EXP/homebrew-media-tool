@@ -7,10 +7,8 @@ class Obuparse < Formula
   license "ISC"
 
   def install
-    system "make", "all"
-    system "ls", "-la", "#{prefix}"
-    system "ls", "-la", "#{lib}"
-    system "make", "install", "PREFIX=#{prefix}", "LIBDIR=#{lib}"
+    system "make"
+    lib.install "libobuparse.a"
   end
 
   test do
