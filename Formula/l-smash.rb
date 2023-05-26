@@ -6,7 +6,10 @@ class LSmash < Formula
   license "ISC"
 
   def install
-    system "./configure", *std_configure_args, "--disable-silent-rules"
+    system "./configure", "--prefix=#{prefix}",
+                          "--libdir=#{prefix}/lib",
+                          "--disable-dependency-tracking",
+                          "--disable-silent-rules"
     system "make", "install"
   end
 
