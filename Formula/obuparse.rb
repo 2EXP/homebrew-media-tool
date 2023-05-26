@@ -8,7 +8,7 @@ class Obuparse < Formula
 
   def install
     system "make"
-    system "make", "install", "PREFIX=#{prefix}"
+    system "make", "install", "PREFIX=#{HOMEBREW_PREFIX}"
   end
 
   test do
