@@ -6,12 +6,15 @@ class Obuparse < Formula
   sha256 "6a1e145b859edeeff49a560eb07016bc1acb936558343037cde46032950f0577"
   license "ISC"
 
-  depends_on "gcc" => :build
-
   def install
-    system "make", "CC=gcc"
+    in    inreplace "Makefile", "libobuparse.so", "libobuparse"
+    system "make"
     include.install "obuparse.h"
-    lib.install "libobuparse.so"
+    if OS.mac?
+      lib.install "libobuparse.dylib"
+    else
+      lib.install "libobuparse.so"
+    end
   end
 
   test do
