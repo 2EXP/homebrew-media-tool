@@ -12,6 +12,6 @@ class Obuparse < Formula
   end
 
   test do
-    system "false"
+    system "ls"
   end
 end
