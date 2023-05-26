@@ -1,5 +1,5 @@
 class Obuparse < Formula
-  desc "A simple and portable single file AV1 OBU parser written in mostly C89 with a tiny bit of C99, with a permissive license."
+  desc "A simple and portable single file AV1 OBU parser"
   homepage "https://github.com/dwbuiten/obuparse"
   url "https://github.com/dwbuiten/obuparse/archive/refs/heads/master.zip"
   version "master"
