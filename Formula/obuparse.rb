@@ -1,14 +1,14 @@
 class Obuparse < Formula
   desc "Simple and portable single file AV1 OBU parser"
   homepage "https://github.com/dwbuiten/obuparse"
-  url "https://github.com/dwbuiten/obuparse/archive/refs/heads/master.tar.gz"
-  version "master"
-  sha256 "c548bc8fda793070043d962c0a58aae9474549d4416bff38a05768f47b89db55"
+  url "https://github.com/dwbuiten/obuparse/archive/055be27797cc37cf6e0c3c0bafc1aa752608b7fb.tar.gz"
+  version "055be27"
+  sha256 "6a1e145b859edeeff49a560eb07016bc1acb936558343037cde46032950f0577"
   license "ISC"
 
   def install
     system "make"
-    system "sudo", "make", "install", "PREFIX=#{prefix}"
+    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
