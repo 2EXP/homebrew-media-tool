@@ -8,7 +8,7 @@ class Obuparse < Formula
 
   def install
     system "make"
-    system "make", "install", "PREFIX=#{prefix}"
+    system "sudo", "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
