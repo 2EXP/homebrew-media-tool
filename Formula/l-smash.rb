@@ -8,7 +8,6 @@ class LSmash < Formula
   def install
     system "./configure", "--prefix=#{prefix}",
                           "--libdir=#{lib}",
-                          "--disable-silent-rules"
     system "make", "install"
   end
 
