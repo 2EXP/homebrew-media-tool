@@ -8,7 +8,7 @@ class LSmash < Formula
 
   def install
     system "./configure", *std_configure_args, "--disable-silent-rules"
-    system "make", "install" # if this fails, try separate make/make install steps
+    system "make", "install"
   end
 
   test do
