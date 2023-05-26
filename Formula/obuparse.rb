@@ -7,7 +7,8 @@ class Obuparse < Formula
   license "ISC"
 
   def install
-    system "make", "PREFIX=#{HOMEBREW_PREFIX}"
+    inreplace "Makefile", "ln -sv libobuparse.so.1", "ln -sv $(PREFIX)/lib/libobuparse.so.1"
+    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
