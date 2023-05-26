@@ -5,7 +5,7 @@ class LSmash < Formula
   sha256 "9a2ae612e3d84116225725013cda2a6e996f65767d923fc07bb67025de9d2215"
   license "ISC"
 
-  depends_on "obuparse" => :build
+  depends_on "obuparse"
 
   def install
     system "./configure", "--prefix=#{prefix}",
