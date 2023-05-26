@@ -8,7 +8,7 @@ class Obuparse < Formula
 
   def install
     system "make"
-    lib.install "libobuparse.a"
+    lib.install "libobuparse.so"
   end
 
   test do
