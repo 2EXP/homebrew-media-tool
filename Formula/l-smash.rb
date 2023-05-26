@@ -7,7 +7,7 @@ class LSmash < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}",
-                          "--libdir=#{lib}",
+                          "--libdir=#{lib}"
     system "make", "install"
   end
 
