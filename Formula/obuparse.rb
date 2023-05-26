@@ -7,7 +7,7 @@ class Obuparse < Formula
   license "ISC"
 
   def install
-    system "make CC=gcc"
+    system "make", "CC=gcc"
     include.install "obuparse.h"
     lib.install "libobuparse.so"
   end
