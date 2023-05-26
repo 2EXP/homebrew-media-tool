@@ -7,7 +7,7 @@ class LSmash < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}",
-                          "--libdir=#{prefix}/lib",
+                          "--libdir=#{lib}",
                           "--disable-dependency-tracking",
                           "--disable-silent-rules"
     system "make", "install"
