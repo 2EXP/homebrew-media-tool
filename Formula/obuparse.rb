@@ -7,7 +7,8 @@ class Obuparse < Formula
   license "ISC"
 
   def install
-    system "sudo", "make", "install", "PREFIX=#{prefix}"
+    system "make"
+    system "make", "install", "PREFIX=#{prefix}"
   end
 
   test do
