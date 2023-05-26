@@ -8,6 +8,8 @@ class Obuparse < Formula
 
   def install
     system "make", "all"
+    system "ls", "-la", "#{prefix}"
+    system "ls", "-la", "#{lib}"
     system "make", "install", "PREFIX=#{prefix}", "LIBDIR=#{lib}"
   end
 
