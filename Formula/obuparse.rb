@@ -3,7 +3,7 @@ class Obuparse < Formula
   homepage "https://github.com/dwbuiten/obuparse"
   url "https://github.com/dwbuiten/obuparse/archive/refs/heads/master.tar.gz"
   version "master"
-  sha256 "d962046b2a9d7ab03ed204bc19c473534822ec87daf89d3ccc1964260da15bcb"
+  sha256 "c548bc8fda793070043d962c0a58aae9474549d4416bff38a05768f47b89db55"
   license "ISC"
 
   def install
