@@ -10,7 +10,7 @@ class LSmashWorks < Formula
   depends_on "l-smash"
 
   def install
-    system "cd", "VapourSynth"
+    Dir.chdir("VapourSynth")
     system "meson", "setup", "build", *std_meson_args
     system "meson", "compile", "-C", "build", "--verbose"
     system "meson", "install", "-C", "build"
