@@ -7,6 +7,7 @@ class Obuparse < Formula
   license "ISC"
 
   def install
+    system "make", "install-tools", "PREFIX=#{prefix}"
     if OS.mac?
       inreplace "Makefile", "-Wl,--version-script,obuparse.v", ""
       inreplace "Makefile", "libobuparse.so", "libobuparse.dylib"
