@@ -20,8 +20,4 @@ class Obuparse < Formula
     end
     include.install "obuparse.h"
   end
-
-  test do
-    system "ls"
-  end
 end

@@ -12,8 +12,4 @@ class LSmash < Formula
                           "--libdir=#{lib}"
     system "make", "install"
   end
-
-  test do
-    system "ls"
-  end
 end
